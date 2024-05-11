@@ -33,8 +33,10 @@ public class Main {
         //ex2
         System.out.println("Nhập n = ");
         Scanner scanner = new Scanner(System.in);
+        //float n = scanner.nextFloat();
         int n = scanner.nextInt();
-        decisionMaking.checkOddEven(n);
+        decisionMaking.printDayOfWeek(n);
 
     }
+
 }
