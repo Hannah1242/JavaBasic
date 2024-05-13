@@ -1,6 +1,7 @@
 import day1.DataTypesAndVariables;
 import day2.DecisionMaking;
 import day2.JavaIO;
+import day3.Loop;
 
 import java.util.Scanner;
 
@@ -27,15 +28,17 @@ public class Main {
 //        decisionMaking.checkNum(myInt);
 
         // ex
-        JavaIO javaIO = new JavaIO();
+        //JavaIO javaIO = new JavaIO();
         //javaIO.print();
 
         //ex2
-        System.out.println("Nhập n = ");
-        Scanner scanner = new Scanner(System.in);
+        //System.out.println("Nhập n = ");
+       // Scanner scanner = new Scanner(System.in);
         //float n = scanner.nextFloat();
-        int n = scanner.nextInt();
-        decisionMaking.printDayOfWeek(n);
+        //int n = scanner.nextInt();
+       // decisionMaking.printDayOfWeek(n);
+        Loop loop = new Loop();
+        loop.printSquareBoard();
 
     }
 
