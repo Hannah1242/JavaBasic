@@ -39,6 +39,7 @@ public class Main {
        // decisionMaking.printDayOfWeek(n);
         Loop loop = new Loop();
         loop.printSquareBoard();
+        loop.SumAndAverageEx2();
 
     }
 

@@ -25,6 +25,68 @@ public class Loop {
             }
             System.out.println();
         }
+    }
+    public void SumAndAverageEx2(){
+        int sum = 0;
+        int count = 0;
+        for(int i = 111; i <= 8899; i++){
+            sum = sum + i;
+            count ++;
+        }
+        System.out.println("The sum is "  + sum);
+        Double average = (double)sum/(double) count;
+        System.out.println("The average is " +  Math.round(average*100.0)/100.0);
+    }
+    public void SumAndAverageEx3(){
+        int sum = 0;
+        int count = 0;
+        for(int i = 1; i <= 100; i++){
+            if(i % 2 == 1){
+                sum = sum + i;
+                count++;
+            }
+        }
+        System.out.println("The sum is " +sum);
+        Double average = (double)sum/(double) count;
+        System.out.println("The average is " +  Math.round(average*100.0)/100.0);
+    }
+    public void SumAndAverageEx4(){
+        int sum = 0;
+        int count = 0;
+        for(int i = 1; i <= 100; i++) {
+            if (i % 7 == 0) {
+                sum = sum + i;
+                count++;
+            }
+        }
+        System.out.println("The sum is " +sum);
+        Double average = (double)sum/(double) count;
+        System.out.println("The average is " +  Math.round(average*100.0)/100.0);
 
     }
+    public void SumAndAverageEx5(){
+        int sum = 1;
+        for(int i = 1; i <= 100; i++){
+            sum += i * i;
+        }
+        System.out.println("The sum is " +sum);
+    }
+    public void SumAndAverageEx6(){
+        int n = 50000;
+
+    }
+    public void SumAndAverageEx7() {
+        int n = 7; // Size of the checkerboard
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if ((i + j) % 2 == 0) {
+                    System.out.print("# ");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
 }
+
