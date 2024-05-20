@@ -81,7 +81,28 @@ public class Main {
         // array - ex1;
         GradeAverage gradeAverage = new GradeAverage();
         //gradeAverage.printStudents();
-        gradeAverage.printArray();
+        int[] intArray = {1, 2, 3, 4, 5};
+        System.out.print("Int Array: ");
+        gradeAverage.printArray(intArray);
+
+        double[] doubleArray = {1.1, 2.2, 3.3, 4.4, 5.5};
+        System.out.print("Double Array: ");
+        gradeAverage.printArray(doubleArray);
+
+        float[] floatArray = {1.1f, 2.2f, 3.3f, 4.4f, 5.5f};
+        System.out.print("Float Array: ");
+        gradeAverage.printArray(floatArray);
+
+        // Test empty array
+        int[] emptyArray = {};
+        System.out.print("Empty Array: ");
+        gradeAverage.printArray(emptyArray);
+
+        // Test 1 element array
+        int[] oneElementArray = {10};
+        System.out.print("One-Element Array: ");
+        gradeAverage.printArray(oneElementArray);
+
 
 
     }

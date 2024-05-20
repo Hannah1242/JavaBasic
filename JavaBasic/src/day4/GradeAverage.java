@@ -26,36 +26,42 @@ public class GradeAverage {
         double average =sum/numstudents;
         System.out.println("The average is: " + average);
     }
-    public void printArray(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the number of array: ");
-        int n = scanner.nextInt();
-        if(n > 1){
-            int[] array = new int[n];
-            for(int i = 0; i< n; i++){
-                array[i] = scanner.nextInt();
-            }
-            System.out.println("Phần tử của mảng: ");
-            System.out.print("{ ");
-            for (int i = 0; i < n; i++) {
-                System.out.print(array[i]);
-                if (i < n - 1) {
-                    System.out.print(", ");
-                }
-            }
-            System.out.println("}");
+    public void printArray(int[] array){
+        if (array == null || array.length == 0) {
+            System.out.println("{}");
+            return;
         }
-        else if(n == 1){
-            int[] array = new int[n];
-            array[0]= scanner.nextInt();
-
-            System.out.println("Mảng có 1 phần tử");
-            System.out.println(array[0]);
+        System.out.print("{");
+        for (int i = 0; i < array.length - 1; i++) {
+            System.out.print(array[i] + ", ");
         }
-        else {
-            System.out.println("Mảng rỗng");
-        }
+        System.out.println(array[array.length - 1] + "}");
     }
+
+    public static void printArray(double[] array) {
+        if (array == null || array.length == 0) {
+            System.out.println("{}");
+            return;
+        }
+        System.out.print("{");
+        for (int i = 0; i < array.length - 1; i++) {
+            System.out.print(array[i] + ", ");
+        }
+        System.out.println(array[array.length - 1] + "}");
+    }
+    public static void printArray(float[] array) {
+        if (array == null || array.length == 0) {
+            System.out.println("{}");
+            return;
+        }
+        System.out.print("{");
+        for (int i = 0; i < array.length - 1; i++) {
+            System.out.print(array[i] + ", ");
+        }
+        System.out.println(array[array.length - 1] + "}");
+    }
+
+
 }
 
 
