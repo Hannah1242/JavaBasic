@@ -38,7 +38,7 @@ public class GradeAverage {
         System.out.println(array[array.length - 1] + "}");
     }
 
-    public static void printArray(double[] array) {
+    public void printArray(double[] array) {
         if (array == null || array.length == 0) {
             System.out.println("{}");
             return;
@@ -49,7 +49,7 @@ public class GradeAverage {
         }
         System.out.println(array[array.length - 1] + "}");
     }
-    public static void printArray(float[] array) {
+    public void printArray(float[] array) {
         if (array == null || array.length == 0) {
             System.out.println("{}");
             return;

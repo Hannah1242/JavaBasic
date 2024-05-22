@@ -80,7 +80,7 @@ public class Main {
 //        }
         // array - ex1;
         GradeAverage gradeAverage = new GradeAverage();
-        //gradeAverage.printStudents();
+        gradeAverage.printStudents();
         int[] intArray = {1, 2, 3, 4, 5};
         System.out.print("Int Array: ");
         gradeAverage.printArray(intArray);
@@ -93,17 +93,13 @@ public class Main {
         System.out.print("Float Array: ");
         gradeAverage.printArray(floatArray);
 
-        // Test empty array
         int[] emptyArray = {};
         System.out.print("Empty Array: ");
         gradeAverage.printArray(emptyArray);
 
-        // Test 1 element array
         int[] oneElementArray = {10};
         System.out.print("One-Element Array: ");
         gradeAverage.printArray(oneElementArray);
-
-
 
     }
 }
