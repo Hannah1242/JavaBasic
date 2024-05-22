@@ -2,7 +2,7 @@ package day3;
 
 public class Loop {
     public void printArray(){
-        byte a[] = new byte[]{1,3,5,8,9};
+        byte[] a = new byte[]{1,3,5,8,9};
         for(int i =0; i<a.length;i++){
             System.out.println(a[i]);
         }
